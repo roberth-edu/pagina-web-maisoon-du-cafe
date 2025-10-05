@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../style/contacto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../imagenes/maisoon-removebg-preview.png" alt="Logo" width="100" height="80" class="me-2">
+          <span class="fw-bold">MAISOON <br><small class="text-muted">DU CAFÉ</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/funciones.html">Funciones</a></li>
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/beneficios.html">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/objetivos.html">Objetivos</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold mx-4" href="../paginas/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <a href="../paginas/Descarga.html" class="btn btn-warning text-white px-4">Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <h1 class="text-center mt-4">Contactanos</h1>
+  <main>
+    <h2 class="mt-4">Nuestra sucursal</h2>
+    <div class="container">
+
+
+      <div class="row">
+        <!-- Columna izquierda (Mapa) -->
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1428.5673465421535!2d-75.71233167702927!3d45.42992042138351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1bc651eb78d3%3A0xf49f18eaa791b819!2sMaison%20Du%20Caf%C3%A9%20Happy%20Goat%20Coffee%20Company%20(Notre-Dame-de-l%E2%80%99%C3%AEle)!5e1!3m2!1ses-419!2ssv!4v1759097477660!5m2!1ses-419!2ssv"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo *</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required minlength="2">
+              <div class="invalid-feedback">
+                Por favor ingresa tu nombre completo (mínimo 2 caracteres).
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico *</label>
+              <input type="email" class="form-control" id="correo" name="correo" required>
+              <div class="invalid-feedback">
+                Por favor ingresa un correo electrónico válido.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9}"
+                placeholder="123456789">
+              <div class="invalid-feedback">
+                Ingresa un teléfono válido de 9 dígitos.
+              </div>
+
+              <div class="mb-3">
+                <label for="comentario" class="form-label">Comentario *</label>
+                <textarea class="form-control" id="comentario" name="comentario" rows="4" required
+                  minlength="10"></textarea>
+                <div class="invalid-feedback">
+                  Por favor ingresa un comentario (mínimo 10 caracteres).
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1 -->
+        <div class="col-md-3">
+          <h5>Maisoon du cafe</h5>
+          <p>Transformando la administración del café con tecnología de vanguardia para optimizar recursos y maximizar
+            ganancias.</p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="col-md-3">
+          <h5>Funcionalidades</h5>
+          <ul class="list-unstyled">
+            <li>Gestión de Inventario</li>
+            <li>Control Financiero</li>
+            <li>Administración de Personal</li>
+            <li>Reportes y Analytics</li>
+            <li>Automatización</li>
+          </ul>
+        </div>
+        <!-- Columna 3 -->
+        <div class="col-md-3">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Casos de Éxito</a></li>
+          </ul>
+        </div>
+        <!-- Columna 4 -->
+        <div class="col-md-3">
+          <h5>Contacto</h5>
+          <p>
+            MaisonDuCafe@gmail.com <br>
+            +1 (555) 123-4567 <br>
+            www.coffeeadmin.com <br>
+            San Salvador, El Salvador
+          </p>
+        </div>
+      </div>
+
+      <!-- Parte inferior -->
+      <div class="footer-bottom d-flex justify-content-between">
+        <span>2024 CoffeeAdmin. Todos los derechos reservados.</span>
+        <div class="footer-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

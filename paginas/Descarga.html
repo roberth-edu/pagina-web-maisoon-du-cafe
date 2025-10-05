@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../style/descarga.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Descargar sistema</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="../imagenes/maisoon-removebg-preview.png" alt="Logo" width="100" height="80" class="me-2">
+          <span class="fw-bold">MAISOON <br><small class="text-muted">DU CAFÉ</small></span>
+        </a>
+
+        <!-- Botón responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/funciones.html">Funciones</a></li>
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/beneficios.html">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link mx-4" href="../paginas/objetivos.html">Objetivos</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold mx-4" href="../paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div>
+          <a href="#" class="btn btn-warning text-white px-4">Demo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="text-center">
+    <h1 class="mt-4">Descargar el sistema Maisoon du cafe</h1>
+    <H4 class=" mt-4">¿Listo para transformar tu tienda de café en un negocio más eficiente y rentable?</H4>
+    <p class="mt-4">Maison du Café es el sistema administrativo diseñado específicamente para emprendedores del mundo
+      cafetalero que desean simplificar su gestión diaria y, al mismo tiempo, maximizar sus ganancias. Con esta
+      plataforma intuitiva y poderosa tendrás el control total de tu negocio: desde el seguimiento preciso de inventario
+      y gastos, la administración de tu personal y sus horarios, hasta la generación de reportes claros que te muestran
+      la rentabilidad real de tu cafetería, todo en un mismo lugar y accesible desde cualquier dispositivo. Imagina
+      ahorrar tiempo, evitar pérdidas, tomar decisiones basadas en datos reales y automatizar procesos que antes te
+      quitaban horas de trabajo; con Maison du Café no solo gestionas tu negocio, lo llevas al siguiente nivel,
+      asegurando un crecimiento sostenible y mayores ingresos para tu emprendimiento.</p>
+
+    <button class="button" id="download">Descargar sistema</button>
+    <hr class="mt-5">
+    <script>
+      document.getElementById('download').addEventListener('click', function () {
+        const link = document.createElement('a');
+        const fileName = 'maisson du cafe (ptc).rar';
+        link.href = '../manual/' + encodeURIComponent(fileName);
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    </script>
+
+    <h1 class="text-center mt-5">video como empezar con el programa</h1>
+    <video src="../video/Maisoon du cafe-1.mp4 " controls></video>
+
+
+
+    <h1 class="text-center mt-5">Caracteristicas del sistema</h1>
+
+    <div class="contenedor text-start">
+      <ul>
+        <li class="text-start mt-4"> <strong>Gestión Financiera Integral</strong></li>
+        <p class="text-start">Maisoon du Café ofrece un control completo sobre las finanzas de tu cafetería, permitiendo
+          un seguimiento
+          detallado de gastos y ganancias. El sistema genera reportes automáticos que muestran el flujo de caja,
+          ayudando a identificar áreas de oportunidad y maximizar la rentabilidad del negocio. Con esta herramienta, los
+          propietarios pueden tomar decisiones informadas basadas en datos reales y actualizados.</p>
+
+
+        <li class="text-start mt-4"><strong>Control de Inventario Eficiente</strong></li>
+        <p class="text-start">El Programa cuenta con un sistema de inventario que permite a los administradores ingresar
+          productos que han comprado recientemente para poner tener un mejor control de gastos y cantidad de producto
+          presente,
+          ademas de ser capaz de hacer un estimado de ganancias segun la cantidad de producto y el precio que se vendera
+        </p>
+
+
+        <li class="text-start mt-4"><strong>Seguridad con Encriptación</strong></li>
+        <p class="text-start">La protección de datos es prioritaria en Maisoon du Café. Todas las contraseñas se
+          almacenan encriptadas, garantizando que la información sensible del negocio y de los usuarios permanezca
+          segura. El sistema implementa protocolos de autenticación robustos para prevenir accesos no autorizados.</p>
+
+
+        <li class="text-start mt-4"><strong>Optimización Operativa</strong></li>
+        <p class="text-start">El sistema está diseñado específicamente para el flujo de trabajo de una cafetería,
+          reduciendo tiempos de espera, minimizando errores en órdenes y automatizando tareas repetitivas. Esto se
+          traduce en mayor productividad y mejor servicio al cliente.</p>
+
+
+        <li class="text-start mt-4"><strong>Sistema de Roles Seguro</strong></li>
+        <p class="text-start">Maisoon du Café implementa una división clara de responsabilidades entre administradores y
+          empleados. Los administradores tienen acceso completo a todas las funcionalidades del sistema, mientras que
+          los empleados trabajan con una interfaz simplificada enfocada únicamente en las ventas, garantizando que cada
+          usuario tenga las herramientas adecuadas para sus funciones.</p>
+      </ul>
+      <img src="../imagenes/imagen.png" alt="Logo MAISOON" class="imagen mt-4">
+    </div>
+
+    <hr class="mt-5">
+
+    <h1 class="mt-4">Manual de usuario</h1>
+    <p class="mt-4">El presente manual técnico se realizará con el motivo de informar el funcionamiento del sistema de
+      administración Maisoon du cafe mediante los diferentes diagramas que se proporcionaran en este documento en el que
+      se encontraran. Diagrama de dominio, diagrama de entidad y relación, diagrama de casos de uso y los escenarios
+      respectivos, diagrama de actividades, diagrama de clases y diccionario de datos.</p>
+    <button class="button" id="downloadBtn">Descargar manual de usuario</button>
+
+    <script>
+      document.getElementById('downloadBtn').addEventListener('click', function () {
+        const link = document.createElement('a');
+        link.href = '../manual/manual.pdf';  // Cambia aquí la ruta del archivo aqui(cuando tenga el manual)
+        link.download = 'Manual_de_usuario.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+    </script>
+
+  </main>
+
+
+
+
+
+
+
+
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Columna 1 -->
+        <div class="col-md-3">
+          <h5>Maisoon du cafe</h5>
+          <p>Transformando la administración del café con tecnología de vanguardia para optimizar recursos y maximizar
+            ganancias.</p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="col-md-3">
+          <h5>Funcionalidades</h5>
+          <ul class="list-unstyled">
+            <li>Gestión de Inventario</li>
+            <li>Control Financiero</li>
+            <li>Administración de Personal</li>
+            <li>Reportes y Analytics</li>
+            <li>Automatización</li>
+          </ul>
+        </div>
+        <!-- Columna 3 -->
+        <div class="col-md-3">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">Casos de Éxito</a></li>
+          </ul>
+        </div>
+        <!-- Columna 4 -->
+        <div class="col-md-3">
+          <h5>Contacto</h5>
+          <p>
+            MaisonDuCafe@gmail.com <br>
+            +1 (555) 123-4567 <br>
+            www.coffeeadmin.com <br>
+            San Salvador, El Salvador
+          </p>
+        </div>
+      </div>
+
+      <!-- Parte inferior -->
+      <div class="footer-bottom d-flex justify-content-between">
+        <span>2024 CoffeeAdmin. Todos los derechos reservados.</span>
+        <div class="footer-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

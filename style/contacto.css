@@ -1,0 +1,145 @@
+body {
+    background-color: #fffaf3;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding: 20px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+form {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #e76f00;
+    box-shadow: 0 0 0 0.2rem rgba(231, 111, 0, 0.25);
+}
+
+.btn-primary {
+    background-color: #e76f00;
+    border-color: #e76f00;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #cc5f00;
+    border-color: #cc5f00;
+}
+
+footer {
+    background-color: #030749;
+    color: white;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #6c63ff;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    iframe {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    iframe {
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-links {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .footer-links a {
+        margin: 0 7.5px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    form {
+        padding: 15px 10px;
+    }
+}

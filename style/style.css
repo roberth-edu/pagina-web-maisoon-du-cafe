@@ -1,0 +1,273 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        justify-content: center; /* Centra en tablets/mobile */
+    }
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: #fffaf3; 
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%; 
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/* ===== BOTONES ===== */
+.btn-orange {
+    background-color: #e76f00; 
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #cc5f00;
+    color: white;
+}
+
+button.button {
+    background-color: #e76f00;
+    border-radius: 25px;
+    height: 70px;
+    color: #ffff;
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    button.button {
+        width: 500px;
+    }
+}
+
+/* ===== MÉTRICAS ===== */
+.metric {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.metric small {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .metric {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* ===== TEXTO ===== */
+.text-orange {
+    color: #e76f00 !important;
+}
+
+p.definicion {
+    color: #727272;
+}
+
+p.mt-4 {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    p.mt-4 {
+        margin: 30px;
+    }
+}
+
+/* ===== LOGO ===== */
+.logo {
+    mix-blend-mode: multiply;
+}
+
+/* ===== CARDS ===== */
+.mi-card {
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 700px;
+    background-color: #fff;
+    margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+    .mi-card {
+        max-width: 100%;
+        margin: 15px;
+    }
+}
+
+.mi-subtitulo {
+    color: gray;
+    font-size: 14px;
+}
+
+/* ===== CONTENEDOR ===== */
+.contenedor {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px;
+    }
+}
+
+/* ===== LISTAS ===== */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    width: 100%; 
+    max-width: 50%;
+}
+
+@media (min-width: 992px) {
+    ul {
+        max-width: 50%;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    ul {
+        max-width: 100%;
+        padding-left: 15px;
+        margin-left: 0;
+    }
+}
+
+/* ===== IMÁGENES ===== */
+.imagen {
+    max-width: 450px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .imagen {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .imagen {
+        margin-left: 500px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== TITULOS ===== */
+h2 {
+    margin-left: 0;
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    h2 {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #030749; 
+    color: white;
+    padding: 30px 15px;
+    font-size: 14px;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #6c63ff; 
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: #bbb;
+}
+
+.footer-links {
+    text-align: right;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    font-size: 13px;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .footer-links a {
+        margin: 0 7.5px;
+        display: inline-block;
+    }
+}
+
+/* ===== MOBILE EXTRA SMALL ===== */
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .metric {
+        gap: 10px;
+    }
+}
+
+/* ===== EXTRA LARGE ===== */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}

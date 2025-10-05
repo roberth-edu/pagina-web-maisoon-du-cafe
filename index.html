@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisson du cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./java/java.js">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>    
+          
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./imagenes/maisoon.png" alt="Logo" width="100" height="80" class="me-2">
+        <span class="fw-bold">MAISOON <br><small class="text-muted">DU CAFÉ</small></span>
+      </a>
+
+      <!-- Botón responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link mx-4" href="./paginas/funciones.html">Funciones</a></li>
+          <li class="nav-item"><a class="nav-link mx-4" href="./paginas/beneficios.html">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link mx-4" href="./paginas/objetivos.html">Objetivos</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold mx-4" href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Botón Demo -->
+      <div>
+        <a href="./paginas/Descarga.html" class="btn btn-warning text-white px-4"id="btnDemo">Demo</a>
+      </div>
+    </div>
+  </nav>
+    </header>
+
+
+      <section class="container py-5">
+    <div class="row align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">
+          sistema de <br> administracion de <br> cafe
+        </h1>
+        <p class="lead">
+          Optimiza la gestión de tu negocio cafetero con una plataforma integral 
+          que unifica inventario, finanzas, empleados y recursos en tiempo real
+        </p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="./paginas/funciones.html" class="btn btn-orange px-4">Conocer más</a>
+          <a href="./paginas/Descarga.html" class="btn btn-outline-dark px-4">Descargar</a>
+        </div>
+
+        <!-- Métricas -->
+        <div class="d-flex gap-5 mt-5">
+          <div class="metric text-orange">
+            98%
+            <small>precisión de inventario</small>
+          </div>
+          <div class="metric text-orange">
+            38% <small>Reducción de gastos</small>
+          </div>
+          <div class="metric text-orange">
+            10 millones <small>De usuarios</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-lg-6 text-center">
+        <img src="./imagenes/maisoon-removebg-preview.png" alt="Logo Maison du Café" class="img-fluid">
+      </div>
+    </div>
+  </section>
+    <script>
+    
+    console.log("Bienvenido a Maison du Café ");
+
+    
+    document.getElementById("btnDemo").addEventListener("click", function(event){
+      event.preventDefault(); // Evita que recargue la página
+      Swal.fire({
+        title: "Bienvenido a Maison du Café ",
+        text: "Este es un demo del sistema de administración.",
+        icon: "info",
+        confirmButtonText: "¡Genial!"
+          }).then(() => {
+    // Redirige a la página después de cerrar el mensaje
+    window.location.href = this.href;
+      });
+    });
+  </script>
+
+
+</body>
+</html>
